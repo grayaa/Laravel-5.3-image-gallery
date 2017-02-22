@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('gallery/list','GalleryController@viewGalleryList');
+Route::get('gallery/save','GalleryController@saveGallery');
+Route::get('gallery/view/{id}','GalleryController@viewGalleryPics');
+Route::get('image/do-upload','GalleryController@doImageUpload');
