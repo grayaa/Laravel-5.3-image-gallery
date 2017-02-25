@@ -1,0 +1,26 @@
+.gallery_images ul {
+    list-style: none;
+    padding: 0;
+}
+
+.gallery_images ul li{
+    float: left;
+    width: 20%;
+    margin-right: 2%;
+    border: 1px solid #000;
+    margin-bottom: 25px;
+
+}
+
+.gallery_images ul li img {
+    width: 100%;
+}
+
+.gallery_images {
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+h1{
+    margin-bottom: 45px;
+}

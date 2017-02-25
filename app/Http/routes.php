@@ -12,10 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('users.login');
+});
+
+Route::post('user/do-login','Auth\AuthController@doLogin');
+
+Route::get('user/logout',function(){
+    Auth::logout();
+    return redirect('/');
 });
 
 Route::get('gallery/list','GalleryController@viewGalleryList');
-Route::get('gallery/save','GalleryController@saveGallery');
+Route::resource('gallery/save','GalleryController@saveGallery');
 Route::get('gallery/view/{id}','GalleryController@viewGalleryPics');
-Route::get('image/do-upload','GalleryController@doImageUpload');
+Route::resource('image/do-upload','GalleryController@doImageUpload');
+Route::get('gallery/delete/{id}', 'GalleryController@deleteGallery');
