@@ -4,7 +4,7 @@
     <title>My Gallery App</title>
     <link rel="stylesheet" type="text/css" href="{{ url(elixir('css/all.css')) }}">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/lightbox.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/lightbox.min.css') }}">
     <script type="text/javascript">
         var baseUrl = "{{ url('/') }}";
     </script>
@@ -56,6 +56,6 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js"></script>
     <script type="text/javascript" src="{{ url(elixir('js/all.js')) }}"></script>
-    <script type="text/javascript" src="{{ secure_asset('js/lightbox.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/lightbox.min.js') }}"></script>
 </body>
 </html>
